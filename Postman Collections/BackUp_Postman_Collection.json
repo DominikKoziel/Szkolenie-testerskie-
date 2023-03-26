@@ -1,0 +1,324 @@
+{
+	"info": {
+		"_postman_id": "60bffd88-f994-47e7-a1d8-9cd5504466a0",
+		"name": "Trello Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Board",
+			"_postman_id": "42ce2c5d-d073-4338-900b-819d7b5920c8",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/?name=Tablica API&key=9a092ecf3c2012b8dd16112db95e8919&token=ATTA3960a28277a60d77ce1650c70d26d93fa6b43aec2026eaa6144bb2dd69d6cc7e5B2CB66B",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Tablica API"
+						},
+						{
+							"key": "key",
+							"value": "9a092ecf3c2012b8dd16112db95e8919"
+						},
+						{
+							"key": "token",
+							"value": "ATTA3960a28277a60d77ce1650c70d26d93fa6b43aec2026eaa6144bb2dd69d6cc7e5B2CB66B"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new List",
+			"_postman_id": "d510093b-1387-4196-aea5-71b58f566b80",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/list?name=ToDo&idBoard=641ff935ff88999e13dd118a&key=9a092ecf3c2012b8dd16112db95e8919&token=ATTA3960a28277a60d77ce1650c70d26d93fa6b43aec2026eaa6144bb2dd69d6cc7e5B2CB66B",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"list"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "ToDo"
+						},
+						{
+							"key": "idBoard",
+							"value": "641ff935ff88999e13dd118a"
+						},
+						{
+							"key": "key",
+							"value": "9a092ecf3c2012b8dd16112db95e8919"
+						},
+						{
+							"key": "token",
+							"value": "ATTA3960a28277a60d77ce1650c70d26d93fa6b43aec2026eaa6144bb2dd69d6cc7e5B2CB66B"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateCard",
+			"_postman_id": "eeccef31-5a3c-4c1c-97d8-6f814d5d117e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/1/cards?idList=64200031cd354be2b9556450&name=Karta4&key={{key}}&token={{token}}&due=2023/03/21",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"1",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "idList",
+							"value": "64200031cd354be2b9556450"
+						},
+						{
+							"key": "name",
+							"value": "Karta4"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						},
+						{
+							"key": "due",
+							"value": "2023/03/21",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateNewListInProgress",
+			"_postman_id": "09c410b6-0030-48b7-93e2-a76e60f080a2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/1/?list?name=InProgress&idBoard=641ff935ff88999e13dd118a&key={{key}}&token={{token}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"1",
+						""
+					],
+					"query": [
+						{
+							"key": "list?name",
+							"value": "InProgress"
+						},
+						{
+							"key": "idBoard",
+							"value": "641ff935ff88999e13dd118a"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateNewListDone",
+			"_postman_id": "2455a590-47a2-4319-bfa7-24c02be2f899",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/1/list?name=Done&idBoard=641ff935ff88999e13dd118a&key={{key}}&token={{token}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"1",
+						"list"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Done"
+						},
+						{
+							"key": "idBoard",
+							"value": "641ff935ff88999e13dd118a"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateBoard",
+			"_postman_id": "ed877a43-6526-4046-bc97-b5a36ba0b1c3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/1/boards/641ff935ff88999e13dd118a?desc=nowe description do boarda&key={{key}}&token={{token}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"1",
+						"boards",
+						"641ff935ff88999e13dd118a"
+					],
+					"query": [
+						{
+							"key": "desc",
+							"value": "nowe description do boarda"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getMember",
+			"_postman_id": "1ed4debb-9950-49bb-ba5a-5865976cbe71",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/1/members/641ff175281d52413c07ab7c?key={{key}}&token={{token}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"1",
+						"members",
+						"641ff175281d52413c07ab7c"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateMember",
+			"_postman_id": "dafb8864-2651-4abb-8b81-a3c5872e5a50",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/1/members/641ff175281d52413c07ab7c?fullName=Dominik&key={{key}}&token={{token}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"1",
+						"members",
+						"641ff175281d52413c07ab7c"
+					],
+					"query": [
+						{
+							"key": "fullName",
+							"value": "Dominik"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
