@@ -1,0 +1,700 @@
+{
+	"info": {
+		"_postman_id": "f1b517aa-2894-4a0a-8a2b-852c5084e20a",
+		"name": "Trello Api ćwiczenie",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "LABEL",
+			"_postman_id": "aebaf5f6-d0db-4c8f-a4ac-37a4206aa609",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/1/labels?name=Label&color=red&idBoard=6420225489e451c2aed52b30&key={{key}}&token={{token}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"1",
+						"labels"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Label"
+						},
+						{
+							"key": "color",
+							"value": "red"
+						},
+						{
+							"key": "idBoard",
+							"value": "6420225489e451c2aed52b30"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LABEL 2",
+			"_postman_id": "367fa53b-7130-4d2b-9759-3fabd11321ce",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/1/labels?name=Label2&color=yellow&idBoard={{idBoard}}&key={{key}}&token={{token}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"1",
+						"labels"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Label2"
+						},
+						{
+							"key": "color",
+							"value": "yellow"
+						},
+						{
+							"key": "idBoard",
+							"value": "{{idBoard}}"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ćwiczenie Board",
+			"_postman_id": "7c1ea5c9-0f96-485f-a789-da7a9bbb61f7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/1/boards/?name=Api Board Ćwiczenie&key={{key}}&token={{token}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"1",
+						"boards",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Api Board Ćwiczenie"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ćwiczenie Lists To Do",
+			"_postman_id": "b34f9d20-5594-444b-97e7-617e53749469",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/1/lists?name=To Do&idBoard={{idBoard}}&key={{key}}&token={{token}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"1",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "To Do"
+						},
+						{
+							"key": "idBoard",
+							"value": "{{idBoard}}"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Card list To Do1",
+			"_postman_id": "cd04bcb9-fe21-4636-85ae-6c61b4622587",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/1/cards?idList=642023c792abecddbe3cd38d&key={{key}}&token={{token}}&due=2015/11/01&pos=top&idLabels=642027c57651f71a0c861552",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"1",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "idList",
+							"value": "642023c792abecddbe3cd38d"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						},
+						{
+							"key": "due",
+							"value": "2015/11/01"
+						},
+						{
+							"key": "pos",
+							"value": "top"
+						},
+						{
+							"key": "idLabels",
+							"value": "642027c57651f71a0c861552",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Card list to Do2",
+			"_postman_id": "ca0f4191-3d10-4c8f-971d-c9aa07b7f571",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/1/cards?idList=642023c792abecddbe3cd38d&key={{key}}&token={{token}}&due=2001/01/01&idLabels=642027c57651f71a0c861552",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"1",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "idList",
+							"value": "642023c792abecddbe3cd38d"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						},
+						{
+							"key": "due",
+							"value": "2001/01/01",
+							"type": "text"
+						},
+						{
+							"key": "idLabels",
+							"value": "642027c57651f71a0c861552",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Card list To Do3",
+			"_postman_id": "a1d2d836-d4e9-4d3f-9282-86925e89439f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/1/cards?idList=642023c792abecddbe3cd38d&key={{key}}&token={{token}}&due=2004/05/02&idLabels=642027c57651f71a0c861552",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"1",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "idList",
+							"value": "642023c792abecddbe3cd38d"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						},
+						{
+							"key": "due",
+							"value": "2004/05/02",
+							"type": "text"
+						},
+						{
+							"key": "idLabels",
+							"value": "642027c57651f71a0c861552",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ćwiczenie Lists In Progress",
+			"_postman_id": "95ce1dea-2b69-4668-a519-d0cd76e5b7f4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/1/lists?name=In Progress &idBoard={{idBoard}}&key={{key}}&token={{token}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"1",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "In Progress "
+						},
+						{
+							"key": "idBoard",
+							"value": "{{idBoard}}"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Card Lists in Progress 1",
+			"_postman_id": "56067e46-7716-41bd-a5ad-0a7981141de5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/1/cards?idList=642023ca7d95ce922ca7283f&key={{key}}&token={{token}}&idLabels=642027c57651f71a0c861552&due=2000/01/04",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"1",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "idList",
+							"value": "642023ca7d95ce922ca7283f"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						},
+						{
+							"key": "idLabels",
+							"value": "642027c57651f71a0c861552",
+							"type": "text"
+						},
+						{
+							"key": "due",
+							"value": "2000/01/04",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Card Lists in Progress 2",
+			"_postman_id": "127ccfd9-ba20-4120-a567-94050774a26d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/1/cards?idList=642023ca7d95ce922ca7283f&key={{key}}&token={{token}}&idLabel=642027c57651f71a0c861552&due=1889/12/19&pos=bottom",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"1",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "idList",
+							"value": "642023ca7d95ce922ca7283f"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						},
+						{
+							"key": "idLabel",
+							"value": "642027c57651f71a0c861552",
+							"type": "text"
+						},
+						{
+							"key": "due",
+							"value": "1889/12/19",
+							"type": "text"
+						},
+						{
+							"key": "pos",
+							"value": "bottom",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Card Lists in Progress 3",
+			"_postman_id": "f2e056b3-ce23-4bf7-adda-0f1500f46462",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/1/cards?idList=642023ca7d95ce922ca7283f&key={{key}}&token={{token}}&idLabel=642027c57651f71a0c861552&due=2005/09/09&pos=top",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"1",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "idList",
+							"value": "642023ca7d95ce922ca7283f"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						},
+						{
+							"key": "idLabel",
+							"value": "642027c57651f71a0c861552",
+							"type": "text"
+						},
+						{
+							"key": "due",
+							"value": "2005/09/09",
+							"type": "text"
+						},
+						{
+							"key": "pos",
+							"value": "top",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ćwiczenie Lists Done",
+			"_postman_id": "a221b6b4-9ea6-42b8-8460-6d2124f333ff",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/1/lists?name=Done&idBoard={{idBoard}}&key={{key}}&token={{token}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"1",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Done"
+						},
+						{
+							"key": "idBoard",
+							"value": "{{idBoard}}"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Card Done 1",
+			"_postman_id": "11ea179e-f6a3-4882-a5a7-f9a30e84da8a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/1/cards?idList=642023faa9f939cea56e7be8&key={{key}}&token={{token}}&idLabels=64202aa38c535fbc01464e33&due=1888/12/12",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"1",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "idList",
+							"value": "642023faa9f939cea56e7be8"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						},
+						{
+							"key": "idLabels",
+							"value": "64202aa38c535fbc01464e33",
+							"type": "text"
+						},
+						{
+							"key": "due",
+							"value": "1888/12/12",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Card Done 2",
+			"_postman_id": "d79f9e88-2282-45a7-8f0e-1c8a3db5e9ec",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/1/cards?idList=642023faa9f939cea56e7be8&key={{key}}&token={{token}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"1",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "idList",
+							"value": "642023faa9f939cea56e7be8"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Card Done 3",
+			"_postman_id": "49fba643-c70f-4c9a-9710-0b9794a163b4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/1/cards?idList=642023faa9f939cea56e7be8&key={{key}}&token={{token}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"1",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "idList",
+							"value": "642023faa9f939cea56e7be8"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADD LABEL TO A CARD \"DONE1\"",
+			"_postman_id": "50ec7668-4d7a-4e17-8407-4e41ac31e47a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/1/cards/64202b55312d03748a500aeb/idLabels?key={{key}}&token={{token}}&value=642027c57651f71a0c861552",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"1",
+						"cards",
+						"64202b55312d03748a500aeb",
+						"idLabels"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						},
+						{
+							"key": "value",
+							"value": "642027c57651f71a0c861552",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
