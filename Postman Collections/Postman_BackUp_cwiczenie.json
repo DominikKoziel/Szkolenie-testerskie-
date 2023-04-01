@@ -1,13 +1,13 @@
 {
 	"info": {
 		"_postman_id": "f1b517aa-2894-4a0a-8a2b-852c5084e20a",
-		"name": "Trello Api ćwiczenie",
+		"name": "Trello Api Test ćwiczenie",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
 		{
 			"name": "LABEL",
-			"_postman_id": "aebaf5f6-d0db-4c8f-a4ac-37a4206aa609",
+			"id": "aebaf5f6-d0db-4c8f-a4ac-37a4206aa609",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -51,7 +51,7 @@
 		},
 		{
 			"name": "LABEL 2",
-			"_postman_id": "367fa53b-7130-4d2b-9759-3fabd11321ce",
+			"id": "367fa53b-7130-4d2b-9759-3fabd11321ce",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -95,7 +95,7 @@
 		},
 		{
 			"name": "Ćwiczenie Board",
-			"_postman_id": "7c1ea5c9-0f96-485f-a789-da7a9bbb61f7",
+			"id": "7c1ea5c9-0f96-485f-a789-da7a9bbb61f7",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -132,7 +132,7 @@
 		},
 		{
 			"name": "Ćwiczenie Lists To Do",
-			"_postman_id": "b34f9d20-5594-444b-97e7-617e53749469",
+			"id": "b34f9d20-5594-444b-97e7-617e53749469",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -172,7 +172,7 @@
 		},
 		{
 			"name": "New Card list To Do1",
-			"_postman_id": "cd04bcb9-fe21-4636-85ae-6c61b4622587",
+			"id": "cd04bcb9-fe21-4636-85ae-6c61b4622587",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -221,7 +221,7 @@
 		},
 		{
 			"name": "New Card list to Do2",
-			"_postman_id": "ca0f4191-3d10-4c8f-971d-c9aa07b7f571",
+			"id": "ca0f4191-3d10-4c8f-971d-c9aa07b7f571",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -267,7 +267,7 @@
 		},
 		{
 			"name": "New Card list To Do3",
-			"_postman_id": "a1d2d836-d4e9-4d3f-9282-86925e89439f",
+			"id": "a1d2d836-d4e9-4d3f-9282-86925e89439f",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -313,7 +313,7 @@
 		},
 		{
 			"name": "Ćwiczenie Lists In Progress",
-			"_postman_id": "95ce1dea-2b69-4668-a519-d0cd76e5b7f4",
+			"id": "95ce1dea-2b69-4668-a519-d0cd76e5b7f4",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -353,7 +353,7 @@
 		},
 		{
 			"name": "Card Lists in Progress 1",
-			"_postman_id": "56067e46-7716-41bd-a5ad-0a7981141de5",
+			"id": "56067e46-7716-41bd-a5ad-0a7981141de5",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -399,7 +399,7 @@
 		},
 		{
 			"name": "Card Lists in Progress 2",
-			"_postman_id": "127ccfd9-ba20-4120-a567-94050774a26d",
+			"id": "127ccfd9-ba20-4120-a567-94050774a26d",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -450,7 +450,7 @@
 		},
 		{
 			"name": "Card Lists in Progress 3",
-			"_postman_id": "f2e056b3-ce23-4bf7-adda-0f1500f46462",
+			"id": "f2e056b3-ce23-4bf7-adda-0f1500f46462",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -501,7 +501,7 @@
 		},
 		{
 			"name": "Ćwiczenie Lists Done",
-			"_postman_id": "a221b6b4-9ea6-42b8-8460-6d2124f333ff",
+			"id": "a221b6b4-9ea6-42b8-8460-6d2124f333ff",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -541,7 +541,7 @@
 		},
 		{
 			"name": "Card Done 1",
-			"_postman_id": "11ea179e-f6a3-4882-a5a7-f9a30e84da8a",
+			"id": "11ea179e-f6a3-4882-a5a7-f9a30e84da8a",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -587,7 +587,7 @@
 		},
 		{
 			"name": "Card Done 2",
-			"_postman_id": "d79f9e88-2282-45a7-8f0e-1c8a3db5e9ec",
+			"id": "d79f9e88-2282-45a7-8f0e-1c8a3db5e9ec",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -623,7 +623,7 @@
 		},
 		{
 			"name": "Card Done 3",
-			"_postman_id": "49fba643-c70f-4c9a-9710-0b9794a163b4",
+			"id": "49fba643-c70f-4c9a-9710-0b9794a163b4",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -659,7 +659,7 @@
 		},
 		{
 			"name": "ADD LABEL TO A CARD \"DONE1\"",
-			"_postman_id": "50ec7668-4d7a-4e17-8407-4e41ac31e47a",
+			"id": "50ec7668-4d7a-4e17-8407-4e41ac31e47a",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
